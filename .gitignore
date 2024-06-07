@@ -1,37 +1,38 @@
-# Rust build
-target/**
+# Rust artifacts
+Cargo.lock
+target/
 
-# C/C++ language server cache
-.ccls-cache/**
-
-# Node cache
-node_modules
-
-# Tree-sitter ouptut
+# Node artifacts
 build/
+prebuilds/
+node_modules/
+*.tgz
+
+# Swift artifacts
 .build/
-log.html
+
+# Go artifacts
+go.sum
+_obj/
+
+# Python artifacts
+.venv/
+dist/
+*.egg-info
+*.whl
+
+# C artifacts
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.pc
+
+# Example dirs
+/examples/*/
+
+# Grammar volatiles
 *.wasm
-fuzzer-out/
-
-# Fuzzer items
-tree-sitter-src/
-fuzzer/failures/
-fuzzer/corpus
-fuzzer/artifacts
-**.log
-**.out
-**.dSYM
-
-# Windows things
-*.exp
-*.lib
 *.obj
-
-# Other repos
-repositories/
-
-# Editor files
-compile_commands.json
-.vscode/
-*.swp
+*.o
